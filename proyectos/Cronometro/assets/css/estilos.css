@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(131, 131, 131);
+}
+
+h1{
+    font-size: 5vw;
+}
+
+.temporizador{
+    font-size: 10vw;
+}
+
+.btncontrol{
+    font-size: 3vw;
+    border-radius: 15%;
+    background-color: #ffffffa2;
+}
