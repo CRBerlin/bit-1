@@ -1,33 +1,201 @@
+/* Paleta de colores
+🎨 Paleta “Tech Ember”
+
+Orange Core #FF8C32
+Botones, links activos, highlights
+
+🔥 Variantes de naranja (profundidad)
+Orange Dark → #E06C1E
+Hover, estados activos
+
+Orange Soft → #FFB36A
+Detalles, badges, íconos secundarios
+
+⚫ Fondos (clave para que no se vea cargado)
+Background main → #0E0E11
+Card / Panel → #15151A
+Card hover → #1D1D23
+
+⚪ Texto
+Texto principal → #EDEDED
+Texto secundario → #B5B5B5
+Texto muted → #7A7A7A
+
+🔵 Color de apoyo (contraste tech)
+Cyan Tech
+#3ABEFF
+Íconos, links secundarios, detalles “futuristas”
+
+🟢 Estados (mínimos, sin ruido)
+Success → #4CAF50
+Warning → #FF8C32 (usa el mismo naranja)
+Error → #E53935
+
+70% fondos oscuros
+20% grises / texto
+10% naranja (impacto visual) */
+
+:root {
+  --bg-main: #0e0e11;
+  --bg-card: #15151a;
+
+  --orange-main: #ff8c32;
+  --orange-dark: #e06c1e;
+  --orange-soft: #ffb36a;
+
+  --text-main: #ededed;
+  --text-secondary: #b5b5b5;
+
+  --accent-cyan: #3abeff;
+}
+
+/* RESET */
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #3f3f3f;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* LETRAS */
+h1,
+h2,
+.section-title {
+  font-family: "Orbitron", sans-serif;
+  color: var(--orange-main);
+}
+
+body,
+p,
+li {
+  font-family: "Inter", sans-serif;
+  color: var(--text-main);
+}
+
+.stats,
+.skill-level {
+  font-family: "JetBrains Mono", monospace;
+  color: var(--accent-cyan);
+}
+
+/* ESTILOS */
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 nav {
-    justify-self: center;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--orange-main);
+  height: 3rem;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  margin-right: 1rem;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: var(--orange-main);
 }
 
 .avatar {
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center -20px;
+  border: 2px solid var(--orange-main);
+  min-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center -20px;
+}
 
+h1 {
+  color: var(--orange-main);
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 18px;
+}
+
+h6 a {
+  color: #ff8c32;
+}
+
+.titulo-seccion {
+  display: inline-block;
+  color: var(--orange-main);
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--orange-main);
+  padding-bottom: 0.5rem;
+}
+
+.card {
+    width: 20rem;
+  background: var(--bg-card);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.card img {
+  border-radius: 5%;
+}
+
+.card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--orange-main);
+  transform: translateY(-4px);
+}
+
+.card-title {
+  color: var(--orange-main);
+  font-size: 24px;
+}
+
+.card-text {
+  font-size: 18px;
+}
+
+.btn-main {
+  background: var(--orange-main);
+  color: #000;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-main:hover {
+  background: var(--orange-dark);
 }
 
 .prueba {
-    width: 50px;
-    height: 50px; 
-    background-color: red;
-    margin-left: 10px;
-    
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  margin-left: 10px;
 }
 
+svg {
+  margin-right: 20px;
+}
 
 footer {
-    position: fixed;
-    bottom: 0;
-    justify-self: center;
+  bottom: 0;
+  justify-self: center;
 }
