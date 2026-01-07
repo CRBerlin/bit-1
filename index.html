@@ -17,13 +17,13 @@
 <body>
   <main class="container">
     <nav class="d-flex justify-content-end">
-      <a href="#">Sobre mi</a>
-      <a href="#">Proyectos</a>
-      <a href="#">Habilidades</a>
-      <a class="me-5" href="#">Contacto</a>
+      <a href="#sobre-mi">Sobre mi</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a class="me-5" href="#contacto">Contacto</a>
     </nav>
     <!-- Sobre Mi -->
-    <section class="d-flex justify-content-center column-gap-5 align-items-center mt-5">
+    <section id="sobre-mi" class="d-flex justify-content-center column-gap-5 align-items-center mt-5">
       <img class="avatar" src="./assets/img/Avatar.png" alt="Avatar del perfil de usuario." />
       <div class="w-50">
         <h1>
@@ -53,7 +53,7 @@
       </div>
     </section>
     <!-- Proyectos -->
-    <section class="text-center mt-5 proyectos">
+    <section id="proyectos" class="text-center mt-5 proyectos">
       <h2 class="titulo-seccion">Proyectos</h2>
       <div class="d-flex justify-content-evenly mt-3">
         <article class="card">
@@ -66,33 +66,71 @@
           </div>
         </article>
         <article class="card">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="./assets/img/contador_web.png" class="card-img-top" alt="Contador web en JavaScript">
           <div class="card-body">
-            <h5 class="card-title">Card title2</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn btn-primary">Ver proyecto</a>
+            <h5 class="card-title">Contador Web</h5>
+            <p class="card-text">Contador desarrollado con HTML, CSS y JavaScript.
+              Permite sumar y restar para ver en pantalla el conteo.</p>
+            <a href="./proyectos/Contador de clicks/contadorWeb.html" class="btn btn-main" target="_blank">Ver
+              proyecto</a>
           </div>
         </article>
       </div>
     </section>
     <!-- Habilidades -->
-    <section class="text-center mt-5">
+    <section id="habilidades" class="text-center mt-5 skills">
       <h2 class="titulo-seccion">Habilidades</h2>
-      <div class="d-flex justify-content-center mt-3">
-        <!-- habilidades -->
-        <div class="d-flex flex-wrap">
-          <div class="prueba">1</div>
-          <div class="prueba">2</div>
-          <div class="prueba">3</div>
-          <div class="prueba">4</div>
-          <div class="prueba">5</div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="Logo PHP" />
+          </div>
+          PHP
+        </div>
+        <div class="skill-card">
+          <div>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+              alt="Logo JavaScript" />
+          </div>
+          JavaScript
+        </div>
+        <div class="skill-card">
+          <div>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+              alt="Logo MySQL" />
+          </div>
+          MySQL
+        </div>
+        <div class="skill-card">
+          <div>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
+              alt="Logo Flutter" />
+          </div>
+          Flutter
+        </div>
+        <div class="skill-card">
+          <div>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original-wordmark.svg"
+              alt="Logo Unity" />
+          </div>
+          Unity
         </div>
       </div>
     </section>
     <!-- Contacto -->
-    <section class="text-center mt-5">
+    <section id="contacto" class="text-center mt-5" id="contacto">
       <h2 class="titulo-seccion">Contacto</h2>
+      <p>Cuéntame brevemente sobre tu proyecto</p>
+
+      <form id="contactForm" class="contact-form mx-auto mt-4" style="max-width: 400px;">
+        <input type="text" name="nombre" placeholder="Tu nombre" class="form-control mb-3" required>
+        <input type="email" name="email" placeholder="Tu correo" class="form-control mb-3" required>
+        <textarea name="mensaje" placeholder="Háblame de tu proyecto" rows="4" class="form-control mb-3"
+          required></textarea>
+        <button type="submit" class="btn btn-main w-100">
+          Enviar mensaje
+        </button>
+      </form>
     </section>
   </main>
   <footer>

@@ -1,0 +1,53 @@
+body {
+  background-color: #0e0e11;
+  height: 100vh;
+}
+
+.boxContador {
+  background-color: #15151a;
+  margin-top: calc(50vh - 200px);
+  width: 400px;
+  height: 400px;
+  align-content: center;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  color: white;
+}
+
+p {
+  border: 2px solid orange;
+  border-radius: 25px;
+  width: 80%;
+  height: 100px;
+  justify-self: center;
+  align-content: center;
+  font-size: 60px;
+  color: white;
+  font-weight: bolder;
+  align-self: center;
+}
+
+button {
+    color: white;
+    border-radius: 80px;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.btn_menos {
+    background-color: #E53935;
+    
+}
+
+.btn_cero {
+    background-color: #FF8C32;
+}
+
+.btn_mas {
+    background-color: #4CAF50;
+}
