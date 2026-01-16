@@ -56,6 +56,9 @@ Error → #E53935
   box-sizing: border-box;
 }
 
+/* Extra small (xs) — <576px */
+/* Estilos base (mobile first) */
+
 /* LETRAS */
 h1,
 h2,
@@ -85,7 +88,7 @@ body {
   font-family: "Inter", system-ui, sans-serif;
 }
 
-nav {
+.navbar {
   background: var(--bg-card);
   border-bottom: 1px solid var(--orange-main);
   height: 3rem;
@@ -95,15 +98,28 @@ nav {
   z-index: 1000;
 }
 
-nav a {
+.navbar-toggler {
+  background-color: var(--orange-main);
+}
+
+.navbar-toggler-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.navbar a {
   color: var(--text-secondary);
   text-decoration: none;
   margin-right: 1rem;
   font-size: 18px;
 }
 
-nav a:hover {
+.navbar a:hover {
   color: var(--orange-main);
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: end;
 }
 
 .avatar {
@@ -122,14 +138,14 @@ svg {
 h1 {
   color: var(--orange-main);
   font-weight: bold;
-  font-size: 30px;
+  font-size: 24px;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h6 a {
@@ -139,7 +155,7 @@ h6 a {
 .titulo-seccion {
   display: inline-block;
   color: var(--orange-main);
-  font-size: 30px;
+  font-size: 24px;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -148,11 +164,11 @@ h6 a {
 }
 
 .card {
-    width: 20rem;
+  /* width: 20rem; */
   background: var(--bg-card);
   border: 1px solid transparent;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 0;
 }
 
 .card img {
@@ -167,16 +183,17 @@ h6 a {
 
 .card-title {
   color: var(--orange-main);
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .card-text {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .btn-main {
   background: var(--orange-main);
   color: #000;
+  font-size: 16px;
   border: none;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
@@ -190,18 +207,20 @@ h6 a {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 0.4fr));
   gap: 1rem;
+  justify-content: center;
 }
 
 .skill-card {
   background: var(--bg-card);
   border: 1px solid var(--orange-main);
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
   border-radius: 8px;
   font-weight: 600;
   transition: 0.2s ease;
+  font-size: 14px;
 }
 
 .skill-card:hover {
@@ -210,17 +229,16 @@ h6 a {
 }
 
 .skills img {
-  width: 100px;
+  width: 50px;
   margin-bottom: 1rem;
 }
 
-.form-msg{
+.form-msg {
   margin-top: 1rem;
   color: #ff8c00;
   font-weight: 600;
   display: none;
 }
-
 
 footer {
   margin-top: 50px;
@@ -229,5 +247,90 @@ footer {
 }
 
 footer p {
-  font-size: 14px;
+  font-size: 12px;
 }
+
+/* Small (sm) — ≥576px */
+/* @media (min-width: 576px) {
+
+} */
+
+/* Medium (md) — ≥768px */
+/* @media (min-width: 768px) {
+
+} */
+
+/* Large (lg) — ≥992px */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .titulo-seccion {
+    font-size: 30px;
+  }
+
+  .proyectos article {
+  }
+
+  .card {
+    padding: 1.5rem;
+    max-width: 70%;
+    justify-self: center;
+  }
+
+  .card-body {
+    max-width: 80%;
+    justify-self: center;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+
+  .card-text {
+    font-size: 18px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  .btn-main {
+    background: var(--orange-main);
+    color: #000;
+    font-size: 18px;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .skill-card {
+    font-size: 18px;
+    padding: 1rem;
+  }
+
+  .skills img {
+    width: 100px;
+  }
+}
+
+/* Extra large (xl) — ≥1200px */
+/* @media (min-width: 1200px) {
+
+} */
+
+/* Extra extra large (xxl) — ≥1400px */
+/* @media (min-width: 1400px) {
+
+} */
