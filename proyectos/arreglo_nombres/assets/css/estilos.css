@@ -1,0 +1,83 @@
+:root {
+  --bg-main: #0e0e11;
+  --bg-card: #15151a;
+
+  --orange-main: #ff8c32;
+  --orange-dark: #e06c1e;
+  --orange-soft: #ffb36a;
+
+  --text-main: #ededed;
+  --text-secondary: #b5b5b5;
+
+  --accent-cyan: #3abeff;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0e0e11;
+  height: 100vh;
+}
+
+.boxContador {
+  background-color: #15151a;
+  margin-top: calc(50vh - 200px);
+  width: 400px;
+  height: 400px;
+  align-content: center;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.names {
+  border: 2px solid orange;
+  border-radius: 25px;
+  width: 50%;
+  justify-self: center;
+  font-size: 16px;
+  color: white;
+  font-weight: bolder;
+  align-items: center;
+}
+
+.section_search {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-bottom: 1rem;
+
+}
+
+.inputNames {
+  border: 1px solid var(--orange-main);
+  border-radius: 4px;
+  margin-right: 1rem;
+  font-size: 16px;
+  padding: 0.6rem 1.2rem;
+
+}
+
+.btn-search {
+  background: var(--orange-main);
+  color: #000;
+  font-size: 16px;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-search:hover {
+  background: var(--orange-dark);
+}

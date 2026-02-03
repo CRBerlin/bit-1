@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado compañeros de clase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+
+<body>
+    <main class="d-flex">
+        <section class="col-md-6">
+            <h1>Nombres de compañeros</h1>
+            <div class="section_search">
+                <input type="text" name="inputNames" id="inputNames" class="inputNames"
+                    placeholder="Buscar nombre"><button class="btn-search" id="btnSearch"><i class="bi bi-search"></i></button>
+            </div>
+            <ul id="section_names" class="names"></ul>
+        </section>
+        <section class="col-md-6">
+            <h1>Nombres de compañeros filtrados</h1>
+            <ul id="section_names_filtrados" class="names"></ul>
+        </section>
+    </main>
+    <script src="./assets/js/arreglo_nombres.js"></script>
+</body>
+
+</html>
